@@ -34,9 +34,9 @@
                             Estruturas de Repetição
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="dropdown2">
-                            <li><a class="dropdown-item" href="#">while</a></li>
-                            <li><a class="dropdown-item" href="#">do-while</a></li>
-                            <li><a class="dropdown-item" href="#">for</a></li>
+                            <li><a class="dropdown-item" href="estrutura4.php">while</a></li>
+                            <li><a class="dropdown-item" href="estrutura5.php">do-while</a></li>
+                            <li><a class="dropdown-item" href="estrutura6.php">for</a></li>
                         </ul>
                     </li>
                 </ul>
