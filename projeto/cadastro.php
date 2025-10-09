@@ -29,5 +29,25 @@
       <a href="login.html">Faça login aqui</a>
     </p>
   </div>
+  <?php
+    if($_SERVER['REQUEST_METHOD'] == "POST"){
+        require("conexao.php");
+        $nome = $_POST['nome'];
+        $email = $_POST['email'];
+        $senha = password_hash($_POST['senha'], PASSWORD_BCRYPT);
+        try{
+            $stmt = $pdo->prepare("INSERT INTO usuario (nome, email, senha) VALUES (?, ?, ?)");
+            if($stmt->execute([$nome, $email, $senha])){
+                header("location: index.php?cadastro=true");
+            } else{
+                header("location: index.php?cadastro=false");
+            }
+        } catch(Exception $e){
+            echo "Erro ao executar o comando SQL: ".$e->getMessage();
+        }
+
+    }
+
+    ?>
 </body>
 </html>
