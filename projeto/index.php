@@ -34,7 +34,7 @@
     </form>
     <p class="mt-3">
       Ainda não tem uma conta?
-      <a href="cadastro.html">Cadastre-se aqui</a>
+      <a href="cadastro.php">Cadastre-se aqui</a>
     </p>
   </div>
 </body>

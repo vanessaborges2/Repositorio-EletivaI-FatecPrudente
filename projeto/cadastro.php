@@ -9,7 +9,7 @@
 <body>
   <div class="container mt-5">
     <h2 class="mb-4">Cadastro de Usuário</h2>
-    <form action="/cadastro" method="POST">
+    <form action="cadastro.php" method="POST">
       <div class="mb-3">
         <label for="nomeCadastro" class="form-label">Nome</label>
         <input type="text" class="form-control" id="nomeCadastro" name="nome" placeholder="Digite seu nome completo" required />
@@ -26,7 +26,7 @@
     </form>
     <p class="mt-3">
       Já tem uma conta? 
-      <a href="login.html">Faça login aqui</a>
+      <a href="login.php">Faça login aqui</a>
     </p>
   </div>
   <?php
