@@ -32,8 +32,8 @@
             <td><?= $d['id'] ?></td>
             <td><?= $d['nome'] ?></td>
             <td class="d-flex gap-2">
-                <a href="#" class="btn btn-sm btn-warning">Editar</a>
-                <a href="#" class="btn btn-sm btn-info">Consultar</a>
+                <a href="editar_categoria.php?id=<?= $d['id'] ?>" class="btn btn-sm btn-warning">Editar</a>
+                <a href="consultar_categoria.php?id=<?= $d['id'] ?>" class="btn btn-sm btn-info">Consultar</a>
             </td>
         </tr>
         <?php
